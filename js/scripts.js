@@ -20,7 +20,7 @@ $(document).ready(function() {
       colorPoints = 3;
     }
 
-    else if (color === "green") {
+    else if (color === "violet") {
       colorPoints = 4;
     }
 
@@ -32,13 +32,17 @@ $(document).ready(function() {
       colorPoints = 6;
     }
 
-    else if (color === "violet") {
+    else if (color === "green") {
       colorPoints = 7;
+    }
+
+    else if (color === "") {
     }
 
     else {
       alert("Not a valid response! Please choose from the possible answers provided");
     }
+
   });
 
   $("#inputChocolate").change(function() {
@@ -56,29 +60,38 @@ $(document).ready(function() {
       chocolatePoints = 3;
     }
 
+    else if (chocolate === "") {
+    }
+
     else {
       alert("Not a valid response! Please choose from the possible answers provided");
     }
+
+
   });
 
   $("#inputBath").change(function() {
     var bath = ($("#inputBath").val()).toLowerCase();
 
-    if (bath === "champagne") {
+    if (bath === "bubble tea") {
       bathPoints = 1;
     }
 
-    else if (bath === "bubble tea") {
+    else if (bath === "hot cocoa") {
       bathPoints = 2;
     }
 
-    else if (bath === "hot cocoa") {
+    else if (bath === "champagne") {
       bathPoints = 3;
+    }
+
+    else if (bath === "") {
     }
 
     else {
       alert("Not a valid response! Please choose from the possible answers provided");
     }
+
   });
 
   $("#inputHogwarts").change(function() {
@@ -88,16 +101,47 @@ $(document).ready(function() {
       hogwartsPoints = 1;
     }
 
-    else if (hogwarts === "slytherin") {
+    else if (hogwarts === "hufflepuff") {
       hogwartsPoints = 2;
     }
 
-    else if (hogwarts === "hufflepuff") {
+    else if (hogwarts === "ravenclaw") {
       hogwartsPoints = 3;
     }
 
-    else if (hogwarts === "ravenclaw") {
+    else if (hogwarts === "slytherin") {
       hogwartsPoints = 4;
+    }
+
+    else if (hogwarts === "") {
+    }
+
+    else {
+      alert("Not a valid response! Please choose from the possible answers provided");
+    }
+
+  });
+
+  $("#inputGhost").change(function() {
+    var ghost = ($("#inputGhost").val()).toLowerCase();
+
+    if (ghost === "cleopatra") {
+      ghostPoints = 1;
+    }
+
+    else if (ghost === "david bowie") {
+      ghostPoints = 2;
+    }
+
+    else if (ghost === "david foster wallace") {
+      ghostPoints = 3;
+    }
+
+    else if (ghost === "countess bathory") {
+      ghostPoints = 4;
+    }
+
+    else if (ghost === "") {
     }
 
     else {
@@ -105,27 +149,32 @@ $(document).ready(function() {
     }
   });
 
-  $("#inputGhost").change(function() {
-    var ghost = ($("#inputGhost").val()).toLowerCase();
+  $("#submit").click(function() {
+    destinationPoints = colorPoints+chocolatePoints+bathPoints+hogwartsPoints+ghostPoints;
 
-    if (ghost === "david foster wallace") {
-      ghostPoints = 1;
+    if (destinationPoints >= 5 && destinationPoints <= 8) {
+      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
+      $("#destination1").show();
     }
 
-    else if (ghost === "countess bathory") {
-      ghostPoints = 2;
+    else if (destinationPoints > 8 && destinationPoints <= 11) {
+      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
+      $("#destination2").show();
     }
 
-    else if (ghost === "david bowie") {
-      ghostPoints = 3;
+    else if (destinationPoints > 11 && destinationPoints <= 14) {
+      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
+      $("#destination3").show();
     }
 
-    else if (ghost === "cleopatra") {
-      ghostPoints = 4;
+    else if (destinationPoints > 14 && destinationPoints <= 18) {
+      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
+      $("#destination4").show();
     }
 
-    else {
-      alert("Not a valid response! Please choose from the possible answers provided");
+    else if (destinationPoints > 18 && destinationPoints <= 21) {
+      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
+      $("#destination5").show();
     }
   });
 });

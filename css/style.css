@@ -1,0 +1,32 @@
+body {
+  background-color: #333333;
+  color: #81e4c3;
+}
+
+
+h1 {
+  font-family: Abel;
+  font-size: 100px;
+
+}
+
+h2 {
+
+  margin-bottom: 30px;
+}
+
+.form-group {
+  font-size: 20px;
+  font-family: Abel;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+
+
+
+.destinations h1 {
+  display: none;
+}
