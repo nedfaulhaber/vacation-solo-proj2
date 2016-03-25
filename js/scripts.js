@@ -147,34 +147,36 @@ $(document).ready(function() {
     else {
       alert("Not a valid response! Please choose from the possible answers provided");
     }
+
   });
 
-  $("#submit").click(function() {
+  $("#submit").click(function(event) {
     destinationPoints = colorPoints+chocolatePoints+bathPoints+hogwartsPoints+ghostPoints;
 
     if (destinationPoints >= 5 && destinationPoints <= 8) {
-      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
-      $("#destination1").show();
+      $("#destination1, #Mariana-Trench, #destination2, #Rio, #destination3, #ParisTX, #destination4, #Altair, #destination5, #Yakutsk").hide();
+      $("#destination1, #Mariana-Trench").show();
     }
 
     else if (destinationPoints > 8 && destinationPoints <= 11) {
-      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
-      $("#destination2").show();
+      $("#destination1, #Mariana-Trench, #destination2, #Rio, #destination3, #ParisTX, #destination4, #Altair, #destination5, #Yakutsk").hide();
+      $("#destination2, #Rio").show();
     }
 
     else if (destinationPoints > 11 && destinationPoints <= 14) {
-      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
-      $("#destination3").show();
+      $("#destination1, #Mariana-Trench, #destination2, #Rio, #destination3, #ParisTX, #destination4, #Altair, #destination5, #Yakutsk").hide();
+      $("#destination3, #ParisTX").show();
     }
 
     else if (destinationPoints > 14 && destinationPoints <= 18) {
-      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
-      $("#destination4").show();
+      $("#destination1, #Mariana-Trench, #destination2, #Rio, #destination3, #ParisTX, #destination4, #Altair, #destination5, #Yakutsk").hide();
+      $("#destination4, #Altair").show();
     }
 
     else if (destinationPoints > 18 && destinationPoints <= 21) {
-      $("#destination1, #destination2, #destination3, #destination4, #destination5").hide();
-      $("#destination5").show();
+      $("#destination1, #Mariana-Trench, #destination2, #Rio, #destination3, #ParisTX, #destination4, #Altair, #destination5, #Yakutsk").hide();
+      $("#destination5, #Yakutsk").show();
     }
+    event.preventDefault();
   });
 });

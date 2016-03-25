@@ -30,3 +30,9 @@ h3 {
 .destinations h1 {
   display: none;
 }
+
+.destinations img {
+  display: none;
+  height: 260px;
+  width: 280px;
+}
