@@ -3,15 +3,12 @@ body {
   color: #81e4c3;
 }
 
-
 h1 {
   font-family: Abel;
   font-size: 100px;
-
 }
 
 h2 {
-
   margin-bottom: 30px;
 }
 
@@ -23,9 +20,6 @@ h2 {
 h3 {
   font-size: 30px;
 }
-
-
-
 
 .destinations h1 {
   display: none;

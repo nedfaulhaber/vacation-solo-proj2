@@ -67,7 +67,6 @@ $(document).ready(function() {
       alert("Not a valid response! Please choose from the possible answers provided");
     }
 
-
   });
 
   $("#inputBath").change(function() {
