@@ -2,45 +2,53 @@
 <html>
   <head>
     <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/master.css" rel="stylesheet" type="text/css">
-    <script src ="js/jquery-1.12.2js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.2.js"></script>
     <script src="js/scripts.js"></script>
     <title>Vacation Time</title>
   </head>
   <body>
     <div class="container">
       <h1>Get Outta Town!</h1>
-      <h2>Provide answers to the following questions and we will provide you with the vacation destination of your dreams!</h2>
+      <h2>Provide answers to the following questions, then click "Submit", and we will provide you with the vacation destination of your dreams!</h2>
 
       <div class="form-group" id="color">
-        <label class="control-label" for="inputColor">What is your favorite color of the rainbow?</label>
+        <label class="control-label" for="inputError1">What is your favorite color of the rainbow?</label>
         <input type="text" class="form-control" id="inputColor">
       </div>
 
       <div class="form-group" id="chocolate">
-        <label class="control-label" for="inputChocolate">Which of the following chocolates is most appealing to you: dark chocolate, milk chocolate, or white chocolate? </label>
+        <label class="control-label" for="inputError1">Which of the following chocolates is most appealing to you: dark chocolate, milk chocolate, or white chocolate? </label>
         <input type="text" class="form-control" id="inputChocolate">
       </div>
 
-      <div class="form-group" id="activity">
-        <label class="control-label" for="inputActivity">What activity out of the following is most interesting to you: swimming, skiing, or playing Dungeons and Dragons?</label>
-        <input type="text" class="form-control" id="inputActivity">
+      <div class="form-group" id="bath">
+        <label class="control-label" for="inputError1">Which of the following beverages would you most enjoy bathing in: champagne, bubble tea, or hot chocolate?</label>
+        <input type="text" class="form-control" id="inputBath">
       </div>
 
-      <div class="form-group" id="hogwarts-house">
-        <label class="control-label" for="inputHogwarts-house">In the world of Harry Potter, which Hogwarts House would you most likely belong to?</label>
-        <input type="text" class="form-control" id="inputHogwarts-house">
+      <div class="form-group" id="hogwarts">
+        <label class="control-label" for="inputError1">In the world of Harry Potter, which Hogwarts House would you most likely belong to?</label>
+        <input type="text" class="form-control" id="inputHogwarts">
       </div>
 
       <div class="form-group" id="ghost">
-        <label class="control-label" for="inputGhost">If you could spend one hour hanging out with the ghost of one of the following people, who would it be: David Foster Wallace, Countess Bathory, David Bowie, or Ella Fitzgerald?</label>
+        <label class="control-label" for="inputError1">If you could spend one hour hanging out with the ghost of one of the following people, who would it be: David Foster Wallace, Countess Bathory, David Bowie, or Ella Fitzgerald?</label>
         <input type="text" class="form-control" id="inputGhost">
       </div>
 
+      <button type="button" class="btn btn-info" id="submit">Submit</button>
+
+      <hr>
+      <h3>Your Dream Vacation is Waiting For You In: </h3>
+      <div class="destinations" id="destinations">
+        <h1 id="destination1">Irkutsk, Russia</h1>
+        <h1 id="destination2">The Mariana Trench</h1>
+        <h1 id="destination3">Paris, Texas</h1>
+        <h1 id="destination4">Rio de Janeiro</h1>
+        <h1 id="destination5">Altair IV</h1>
+      </div>
+
     </div>
-
-
-
-
   </body>
 </html>
