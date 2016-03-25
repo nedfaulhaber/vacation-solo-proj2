@@ -41,24 +41,91 @@ $(document).ready(function() {
     }
   });
 
-    $("#inputChocolate").change(function() {
-      var chocolate = ($("#inputChocolate").val()).toLowerCase();
+  $("#inputChocolate").change(function() {
+    var chocolate = ($("#inputChocolate").val()).toLowerCase();
 
-      if (chocolate === "dark chocolate") {
-        chocolatePoints = 1;
-      }
+    if (chocolate === "dark chocolate") {
+      chocolatePoints = 1;
+    }
 
-      else if (chocolate === "milk chocolate") {
-        chocolatePoints = 2;
-      }
+    else if (chocolate === "milk chocolate") {
+      chocolatePoints = 2;
+    }
 
-      else if (chocolate === "white chocolate") {
-        chocolatePoints = 3;
-      }
+    else if (chocolate === "white chocolate") {
+      chocolatePoints = 3;
+    }
 
-      else {
-        alert("Not a valid response! Please choose from the possible answers provided");
-      }
-    });
+    else {
+      alert("Not a valid response! Please choose from the possible answers provided");
+    }
+  });
 
+  $("#inputBath").change(function() {
+    var bath = ($("#inputBath").val()).toLowerCase();
+
+    if (bath === "champagne") {
+      bathPoints = 1;
+    }
+
+    else if (bath === "bubble tea") {
+      bathPoints = 2;
+    }
+
+    else if (bath === "hot cocoa") {
+      bathPoints = 3;
+    }
+
+    else {
+      alert("Not a valid response! Please choose from the possible answers provided");
+    }
+  });
+
+  $("#inputHogwarts").change(function() {
+    var hogwarts = ($("#inputHogwarts").val()).toLowerCase();
+
+    if (hogwarts === "gryffindor") {
+      hogwartsPoints = 1;
+    }
+
+    else if (hogwarts === "slytherin") {
+      hogwartsPoints = 2;
+    }
+
+    else if (hogwarts === "hufflepuff") {
+      hogwartsPoints = 3;
+    }
+
+    else if (hogwarts === "ravenclaw") {
+      hogwartsPoints = 4;
+    }
+
+    else {
+      alert("Not a valid response! Please choose from the possible answers provided");
+    }
+  });
+
+  $("#inputGhost").change(function() {
+    var ghost = ($("#inputGhost").val()).toLowerCase();
+
+    if (ghost === "david foster wallace") {
+      ghostPoints = 1;
+    }
+
+    else if (ghost === "countess bathory") {
+      ghostPoints = 2;
+    }
+
+    else if (ghost === "david bowie") {
+      ghostPoints = 3;
+    }
+
+    else if (ghost === "cleopatra") {
+      ghostPoints = 4;
+    }
+
+    else {
+      alert("Not a valid response! Please choose from the possible answers provided");
+    }
+  });
 });
